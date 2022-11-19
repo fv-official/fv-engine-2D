@@ -1,7 +1,5 @@
 # depslib dependency file v1.0
-1668797145 source:f:\fv-engine-2d\fina\main.cpp
-	<SFML/Graphics.hpp>
-	<SFML/Window.hpp>
+1668841711 source:f:\fv-engine-2d\fina\main.cpp
 	"settings.h"
 
 1668789745 f:\fv-engine-2d\lib\sfml-2.5.1-windows-gcc-7.3.0-mingw-64-bit\sfml-2.5.1\include\sfml\graphics.hpp
@@ -419,4 +417,12 @@
 1668797727 f:\fv-engine-2d\fina\include\settings.h
 	<SFML/Graphics.hpp>
 	<iostream>
+
+1668843259 f:\fv-engine-2d\fina\settings.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+
+1668841551 f:\fv-engine-2d\fina\hot_keys.h
+	"settings.h"
 

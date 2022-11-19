@@ -1,27 +1,26 @@
-#include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
 #include "settings.h"
 
 int main()
 {
+// Settings mods:
     window_settings ws;
-    ws.window_size();
+    ws.window_type();
 
-
-    sf::RenderWindow window(sf::VideoMode(ws.WIDTH, ws.HEIGHT), "fina");
-
-    while (window.isOpen())
-    {
+while (ws.window.isOpen()){
         sf::Event event;
-        while (window.pollEvent(event))
-        {
+        while (ws.window.pollEvent(event)){
             if (event.type == sf::Event::Closed)
-                window.close();
+                ws.window.close();
+        // Keys:
+            if(event.type == sf::Event::KeyPressed){
+                if(event.key.code == sf::Keyboard::Key::Escape)
+                    ws.window.close();
         }
-
-        window.clear();
-        window.display();
     }
+
+        ws.window.clear();
+        ws.window.display();
+}
 
     return 0;
 }
